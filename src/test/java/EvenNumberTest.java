@@ -1,17 +1,18 @@
-package com.example;
 
 
 import com.example.model.Calculation;
+
 import org.junit.jupiter.api.*;
+
+import static org.assertj.core.api.Assertions.*;
 
 
 public class EvenNumberTest {
 
     Calculation calc = new Calculation();
     @Test
-    private void eventNumberTest(){
-        boolean result = calc.evenOddNumber(3);
+    public void eventNumberTest(){
 
-
+        assertThat(calc.evenOddNumber(3)).isEqualTo(false);
     }
 }
