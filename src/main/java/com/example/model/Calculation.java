@@ -14,4 +14,12 @@ public class Calculation {
         else
             return false;
     }
+
+    public boolean interval(int num){
+        if (num >= 25 && num <=100){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
